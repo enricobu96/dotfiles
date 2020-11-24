@@ -1,0 +1,10 @@
+profile {
+	output "Chimei Innolux Corporation 0x14C9 0x00000000" mode 1920x1080@60Hz position 0,3168
+	output "Samsung Electric Company C24F390 HTQK701003" mode 1920x1080@71.910Hz position 1920,2603
+	exec swaymsg workspace 1, move workspace to '"Samsung Electric Company C24F390 HTQK701003"'
+	exec swaymsg workspace 9, move workspace to '"Chimei Innolux Corporation 0x14C9 0x00000000"'
+}
+
+profile laptop {
+	output eDP-1 mode 1920x1080 position 0,0
+}

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+lock_sleep(){
+  swaylock \
+  --screenshots \
+	--clock \
+	--indicator \
+	--indicator-radius 120 \
+	--indicator-thickness 10 \
+  --effect-blur 7x5 \
+  timeout 300 'swaymsg "output * dpms off"' \
+  resume 'swaymsg "output * dpms on"' \
+  before-sleep 'swaylock -f -c 000000'
+}
+
+MENU_STRING='Lock\nLogout\nReboot\nSuspend\nShutdown'
+COMMAND=$(echo -e $MENU_STRING | wofi -i -d -p"Powermenu")
+case "$COMMAND" in
+  *Lock) lock_sleep;;
+  *Logout) swaymsg exit;;
+  *Reboot) systemctl reboot ;;
+  *Suspend) swaylock -f -c 000000 & systemctl suspend;;
+  *Shutdown) systemctl -i poweroff
+esac

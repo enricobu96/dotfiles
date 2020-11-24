@@ -1,0 +1,91 @@
+* {
+    font-size: 12px;
+    font-family: "Font Awesome 5 Free";
+}
+
+window#waybar {
+    background: rgba(255, 255, 255, 0.5);
+    color: #fdf6e3;
+}
+#window{
+    background: rgba(24,23,23,0);
+    color: #1E1F23;
+}
+#clock.1 {
+    background: rgba(30, 31, 35, 0);
+    /* border-radius: 15px; */
+}
+#clock.2 {
+    color: #1E1F23;
+    background: rgba(30, 31, 35, 0);
+    /* border-radius: 15px; */
+}
+#clock.3 {
+    background: #E00415;
+    /* border-radius: 15px; */
+}
+#workspaces {
+    margin-left: 12px;
+    /* border-radius: 15px; */
+    background: rgba(30,31,34,0);
+}
+#workspaces button {
+    padding: 0px 4px;
+    margin: 2px 0px 2px;
+    /* border-radius: 15px; */
+    color: #1E1F23;
+}
+#workspaces button.focused {
+    color:  #6A0DAD;
+    border-color: #6A0DAD;
+}
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+#workspaces button:hover {
+    border-color: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.6);
+}
+#backlight {
+    background: rgba(30, 31, 35, 0);
+}
+#memory {
+    background: rgba(30, 31, 35, 0);
+}
+#temperature {
+    background: rgba(30, 31, 35, 0);
+}
+
+#pulseaudio {
+    background: rgba(30, 31, 35, 0);
+}
+#cpu {
+    background: rgba(30, 31, 35, 0);
+}
+#battery {
+    background: rgba(30, 31, 35, 0);
+}
+#battery.charging {
+    background: rgba(30, 31, 35, 0);
+}
+#network {
+    background: rgba(30, 31, 35, 0);
+}
+#tray{
+  background: rgba(30, 31, 35, 0);
+}
+
+#pulseaudio, #backlight, #memory, #cpu, #temperature, #battery, #network, #tray {
+    color: #1E1F23;
+    margin: 0px 4px 0px;
+    padding: 0px 5px 0px;
+}
+#clock{
+    margin: 0px 4px 0px;
+    padding: 0px 5px 0px;
+}
+#workspaces{
+  margin: 0px 4px 0px;
+  padding: 0px 5px 0px;
+}

@@ -1,0 +1,14 @@
+show=drun
+normal_window=false
+lines=10
+dynamic_lines=true
+line_wrap=word
+image_size=15
+show_all=true
+display_generic=true
+allow_images=true
+allow_markup=true
+always_parse_args=true
+print_command=true
+layer=overlay
+insensitive=true
